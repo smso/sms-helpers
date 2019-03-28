@@ -1,30 +1,32 @@
-# Very short description of the package
+# SMS message helpers
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/smso/sms-message-helpers.svg?style=flat-square)](https://packagist.org/packages/smso/sms-message-helpers)
-[![Build Status](https://img.shields.io/travis/smso/sms-message-helpers/master.svg?style=flat-square)](https://travis-ci.org/smso/sms-message-helpers)
-[![Quality Score](https://img.shields.io/scrutinizer/g/smso/sms-message-helpers.svg?style=flat-square)](https://scrutinizer-ci.com/g/smso/sms-message-helpers)
-[![Total Downloads](https://img.shields.io/packagist/dt/smso/sms-message-helpers.svg?style=flat-square)](https://packagist.org/packages/smso/sms-message-helpers)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/smso/sms-helpers.svg?style=flat-square)](https://packagist.org/packages/smso/sms-helpers)
+[![Build Status](https://img.shields.io/travis/smso/sms-helpers/master.svg?style=flat-square)](https://travis-ci.org/smso/sms-helpers)
+[![Quality Score](https://img.shields.io/scrutinizer/g/smso/sms-helpers.svg?style=flat-square)](https://scrutinizer-ci.com/g/smso/sms-helpers)
+[![Total Downloads](https://img.shields.io/packagist/dt/smso/sms-helpers.svg?style=flat-square)](https://packagist.org/packages/smso/sms-helpers)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Helpers based on other libs, but now with added convenience
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require smso/sms-message-helpers
+composer require smso/sms-helpers
 ```
 
 ## Usage
 
 ``` php
-// Usage description here
+smsLength() - get the sms lenght
+smsEncoding() - can return GSM_7BIT, GSM_7BIT_EX, UTF16
+smsCleaner() - removes accents and othe special chars
 ```
 
 ### Testing
 
 ``` bash
-composer test
+no, not yet
 ```
 
 ### Changelog
@@ -37,17 +39,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email necenzurat@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email costin@smso.ro instead of using the issue tracker.
 
 ## Credits
 
-- [Costin Moise](https://github.com/smso)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## PHP Package Boilerplate
-
-This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com).
