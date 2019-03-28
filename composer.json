@@ -1,0 +1,45 @@
+{
+    "name": "smso/sms-helpers",
+    "description": "A collection of helpers to handle SMS messages used in several projects around SMSO",
+    "keywords": [
+        "smso",
+        "sms message",
+        "sms encoding",
+        "sms length"
+    ],
+    "homepage": "https://github.com/smso/sms-helpers",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Costin Moise",
+            "email": "necenzurat+composer@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "instasent/sms-counter-php": "^0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Smso\\SmsMessageHelpers\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
